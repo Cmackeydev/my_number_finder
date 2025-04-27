@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number finder</title>
+    </head>
+
+    <body>
+
+        <div>
+            <h2> Number finder </h2>
+            <p> Ce petit programme permet de chercher une suite de nombre variant de 1 à 10 chiffres dans certains nombres bien spécifiques allant jusqu'à 1 millions de decimales</p>
+            <p>Choix du nombre</p>
+            <form>
+                <input type="radio" id="pi" name="nombre" value="pi" checked >
+                <label for="pi">Pi</label><br>
+                <input type="radio" id="e" name="nombre" value="e">
+                <label for="e">Nombre d'euler</label><br>
+                <input type="radio" id="phi" name="nombre" value="nombre d'or">
+                <label for="phi">Nombre d'or</label><br><br>
+                <label for="sequence">Entrez votre séquence de chiffres :</label>
+    <input type="text" id="sequence" name="sequence" pattern="\d{1,10}" maxlength="10" requiredtitle="Veuillez entrer entre 1 et 10 chiffres uniquement.">
+    <br><br>
+    <button type="submit">Rechercher</button>
+              </form>
+              <p> Nous avons retruver la sequence 111111111 a la 111 position dans le nmbre pi la prichaine suite de séquences de meme quantite est 2222222222</p>
+        </div>
+        
+    </body>
+</html>
