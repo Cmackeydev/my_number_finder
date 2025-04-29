@@ -29,7 +29,7 @@ def analyze_sequence(filename, sequence) -> tuple:
 # =======================
 # Route HTML principal :
 # =======================
-@app.route('/',methods=['POST'])
+@app.route('/',methods=['GET', 'POST'])
 def index():
     # Je te laisse ici un exemple très simple d'HTML intégré
     # (tu peux le remplacer par render_template si tu préfères un fichier .html)
@@ -66,7 +66,7 @@ def index():
 # =======================
 # Route backend pour traiter l'analyse
 # =======================
-@app.route('/analyze', methods=['POST'])
+@app.route('/analyze', methods=['GET', 'POST'])
 def analyze():
     nombre = request.form.get('nombre')  # pi, e ou phi
     sequence = request.form.get('sequence')
